@@ -18,7 +18,7 @@ def mypower(a, b):
             #c = mypower(a,k)
             multiplication_count += 1
             return (c * c)
-        multiplication_count += 1
+        multiplication_count += 2
         #return (mypower(a, k) * mypower(a, k + 1))
         return (c * c * a)
 
@@ -29,7 +29,8 @@ def mypower(a, b):
 test_cases = [
     (3, 0, 1),
     (3, 5, 243),
-    (2, 10, 1024)
+    (2, 10, 1024),
+    (3, 10, 59049),
 ]
 
 for test_case in test_cases:
@@ -66,4 +67,5 @@ print ("All tests passed!")
 assert simple_power(3, 0) == 1
 assert simple_power(3, 5) == 243
 assert simple_power(2, 10) == 1024
+assert simple_power(3, 10) == 59049
 
